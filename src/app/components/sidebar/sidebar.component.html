@@ -44,7 +44,7 @@
               [routerLink]="['/']"
               class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
             >
-              Notus Angular
+              Obstetrics
             </a>
           </div>
           <div class="w-6/12 flex justify-end">
@@ -107,20 +107,20 @@
             [routerLink]="['/admin/settings']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #adminSettings="routerLinkActive"
+            #biodata="routerLinkActive"
             [ngClass]="
-              adminSettings.isActive
+              biodata.isActive
                 ? 'text-red-600 hover:text-red-700'
                 : 'text-blueGray-700 hover:text-blueGray-500'
             "
           >
             <i
-              class="fas fa-tools mr-2 text-sm"
+              class="fas fa-female mr-2 text-30"
               [ngClass]="
-                adminSettings.isActive ? 'opacity-75' : 'text-blueGray-300'
+                biodata.isActive ? 'opacity-75' : 'text-blueGray-300'
               "
             ></i>
-            Settings
+            Biodata of Mother
           </a>
         </li>
 
@@ -142,7 +142,7 @@
                 adminTables.isActive ? 'opacity-75' : 'text-blueGray-300'
               "
             ></i>
-            Tables
+            Pregnancy Information
           </a>
         </li>
 
