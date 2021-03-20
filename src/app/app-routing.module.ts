@@ -45,7 +45,14 @@ const routes: Routes = [
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
-  { path: "landing", component: LandingComponent },
+
+  {
+    path: "landing",
+    component: LandingComponent,
+    children:[
+      { path: "login", component: LoginComponent },
+    ]
+  },
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
