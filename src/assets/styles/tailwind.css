@@ -503,7 +503,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 /**
@@ -2104,7 +2104,7 @@ select {
   line-height: 1.25rem;
 }
 .text-30{
-  font-size: 30px;
+  font-size: 3;
 }
 .text-base {
   font-size: 1rem;

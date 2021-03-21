@@ -50,7 +50,6 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Materials
-import { MaterialModule } from "./material/material.module";
 
 @NgModule({
   declarations: [
@@ -90,7 +89,6 @@ import { MaterialModule } from "./material/material.module";
     ProfileComponent,
   ],
   imports: [
-    MaterialModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
