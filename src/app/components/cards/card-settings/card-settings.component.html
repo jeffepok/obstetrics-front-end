@@ -101,13 +101,15 @@
             >
               Country of Residence
             </label>
-            <select
+            <ion-select
+              interface="popover"
               id="country"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="country"
+              value="Ghana"
             >
-            <option ngDefaultControl *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
-            </select>
+            <ion-select-option ngDefaultControl *ngFor="let country of countries" [value]="country.name">{{country.name}}</ion-select-option>
+            </ion-select>
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4">
@@ -133,13 +135,15 @@
             >
               Educational Level
             </label>
-            <select
+            <ion-select
+              interface="popover"
               id="educationalLevel"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="educationalLevel"
+              value="Primary School"
             >
-            <option ngDefaultControl *ngFor="let educationalLevel of educationalLevels" [value]="educationalLevel.level">{{educationalLevel.level}}</option>
-            </select>
+            <ion-select-option ngDefaultControl *ngFor="let educationalLevel of educationalLevels" [value]="educationalLevel.level">{{educationalLevel.level}}</ion-select-option>
+            </ion-select>
           </div>
         </div>
         <div class="w-full lg:w-6/12 px-4">
@@ -150,15 +154,17 @@
             >
               Marital Status
             </label>
-            <select
+            <ion-select
+              interface="popover"
               id="maritalStatus"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="maritalStatus"
+              value="single"
             >
-            <option value="single">Single</option>
-            <option value="married">Married</option>
-            <option value="other">other</option>
-            </select>
+            <ion-select-option value="single">Single</ion-select-option>
+            <ion-select-option value="married">Married</ion-select-option>
+            <ion-select-option value="other">other</ion-select-option>
+            </ion-select>
           </div>
         </div>
       </div>
