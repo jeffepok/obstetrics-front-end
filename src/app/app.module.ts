@@ -47,6 +47,10 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Materials
+import { MaterialModule } from "./material/material.module";
 
 @NgModule({
   declarations: [
@@ -85,8 +89,15 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     LandingComponent,
     ProfileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [
+    MaterialModule,
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+
+  ],
+  providers: [
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
