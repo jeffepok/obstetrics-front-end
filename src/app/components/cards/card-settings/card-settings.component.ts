@@ -8,7 +8,8 @@ import {educationalLevels} from "./educational-levels";
 export class CardSettingsComponent implements OnInit {
   countries = countries;
   educationalLevels = educationalLevels;
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {}
 }
