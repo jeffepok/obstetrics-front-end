@@ -48,6 +48,7 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardInputsComponent } from './components/cards/card-inputs/card-inputs.component';
 
 // Materials
 
@@ -87,6 +88,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     IndexComponent,
     LandingComponent,
     ProfileComponent,
+    CardInputsComponent,
   ],
   imports: [
     BrowserModule,

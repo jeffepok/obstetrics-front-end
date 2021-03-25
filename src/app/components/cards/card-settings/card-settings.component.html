@@ -102,9 +102,11 @@
               Country of Residence
             </label>
             <select
+              interface="popover"
               id="country"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="country"
+              value="Ghana"
             >
             <option ngDefaultControl *ngFor="let country of countries" [value]="country.name">{{country.name}}</option>
             </select>
@@ -134,9 +136,11 @@
               Educational Level
             </label>
             <select
+              interface="popover"
               id="educationalLevel"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="educationalLevel"
+              value="Primary School"
             >
             <option ngDefaultControl *ngFor="let educationalLevel of educationalLevels" [value]="educationalLevel.level">{{educationalLevel.level}}</option>
             </select>
@@ -154,6 +158,7 @@
               id="maritalStatus"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               name="maritalStatus"
+              value="single"
             >
             <option value="single">Single</option>
             <option value="married">Married</option>
@@ -180,7 +185,6 @@
             <input
               type="text"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-              value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
             />
           </div>
         </div>
@@ -190,12 +194,11 @@
               class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
               htmlFor="grid-password"
             >
-              City
+              District
             </label>
             <input
-              type="email"
+              type="text"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-              value="New York"
             />
           </div>
         </div>
@@ -205,7 +208,7 @@
               class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
               htmlFor="grid-password"
             >
-              Country
+              Region
             </label>
             <input
               type="text"
@@ -220,12 +223,39 @@
               class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
               htmlFor="grid-password"
             >
-              Postal Code
+              Telephone
+            </label>
+            <input
+              type="tel"
+              class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+            />
+          </div>
+        </div>
+        <div class="w-full lg:w-12/12 px-4">
+          <div class="relative w-full mb-3">
+            <label
+              class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+              htmlFor="grid-password"
+            >
+              Name of Contact Person
             </label>
             <input
               type="text"
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-              value="Postal Code"
+            />
+          </div>
+        </div>
+        <div class="w-full lg:w-4/12 px-4">
+          <div class="relative w-full mb-3">
+            <label
+              class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+              htmlFor="grid-password"
+            >
+              Telephone Number For Emergency
+            </label>
+            <input
+              type="tel"
+              class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
             />
           </div>
         </div>
@@ -250,10 +280,7 @@
               class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
               rows="4"
             >
-                  A beautiful UI Kit and Admin for Angular & Tailwind CSS. It is Free
-                  and Open Source.
-                </textarea
-            >
+            </textarea>
           </div>
         </div>
       </div>

@@ -1,8 +1,17 @@
 <div class="flex flex-wrap mt-4">
   <div class="w-full mb-12 px-4">
-    <app-card-table></app-card-table>
+    <app-card-table [heading]="'Maternal Medical History'"
+                    [data]="['hypertension', 'heart disease', 'sickle cell disease', 'allergies']">
+    </app-card-table>
   </div>
+
   <div class="w-full mb-12 px-4">
-    <app-card-table color="dark"></app-card-table>
+    <app-card-table [heading]="'Family History'"
+                    [data]="['hypertension', 'heart disease', 'diabetes', 'multiple pregnancy', 'birth defects', 'mental disorder']"
+                    color="dark">
+    </app-card-table>
+    <app-card-table [heading]="'Social History'" [data]="['alcohol', 'smoking']">
+    </app-card-table>
   </div>
+
 </div>
