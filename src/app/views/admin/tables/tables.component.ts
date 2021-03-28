@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './tables.component.html',
 })
 export class TablesComponent implements OnInit {
+
   constructor() {}
 
   ngOnInit(): void {}

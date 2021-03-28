@@ -2,10 +2,10 @@ import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-card-inputs',
-  templateUrl: './card-inputs.component.html',
-  styleUrls: ['./card-inputs.component.css']
+  templateUrl: './card-number-inputs.component.html',
+  styleUrls: ['./card-number-inputs.component.css']
 })
-export class CardInputsComponent implements OnInit {
+export class CardNumberInputsComponent implements OnInit {
   @Input()
   get color(): string {
     return this._color;
