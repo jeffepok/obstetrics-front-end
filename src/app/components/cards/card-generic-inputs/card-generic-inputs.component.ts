@@ -19,6 +19,7 @@ export class CardGenericInputsComponent implements OnInit {
   @Input() textInputs;
   @Input() radioInputs;
   @Input() selectInputs;
+  @Input() date: boolean;
   constructor() { }
 
   public toInitialUpperCase(word: string): string{

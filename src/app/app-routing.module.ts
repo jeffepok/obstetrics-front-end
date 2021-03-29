@@ -7,7 +7,7 @@ import { AuthComponent } from './layouts/auth/auth.component';
 
 // admin views
 import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
-import { SettingsComponent } from './views/admin/settings/settings.component';
+import { SettingsComponent } from './views/admin/biodata/settings.component';
 import { TablesComponent } from './views/admin/tables/tables.component';
 
 // auth views

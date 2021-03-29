@@ -39,6 +39,17 @@
         >
           Data
         </th>
+        <th
+          *ngIf="date"
+          class="px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left"
+          [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
+        >
+          Date
+        </th>
 
       </tr>
       </thead>
@@ -61,6 +72,7 @@
           <input class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                  type="{{history.type}}"  name="{{history.name}}">
         </td>
+
       </tr>
       <tr *ngFor="let history of selectInputs">
         <th
@@ -87,6 +99,13 @@
             </option>
           </select>
         </td>
+        <td *ngIf="date"
+            class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+        >
+          <input class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                 type="date"  name="{{history.name}} + 'date' ">
+        </td>
+
       </tr>
 
 

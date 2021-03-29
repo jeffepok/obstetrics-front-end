@@ -26,7 +26,7 @@ export const selectInputsPreviousPreg = [
   },
   {
     heading: 'Mode of Delivery',
-    type: 'text',
+    type: 'select',
     name: 'mode',
     selectOptions: ['C-section', 'Normal']
   },
