@@ -56,16 +56,16 @@
       <tbody>
 
       <tr *ngFor="let history of textInputs">
-        <th
-          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+        <td
+          class="px-6 align-middle border py-3 text-xs border-l-0 border-r-0 whitespace-nowrap font-semibold "
+          [ngClass]="
+              color === 'light'
+                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
         >
-            <span
-              class="ml-3 font-bold"
-              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
-            >
-              {{history.heading}}
-            </span>
-        </th>
+          {{history.heading}}
+        </td>
         <td
           class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
         >

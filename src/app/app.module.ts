@@ -49,6 +49,8 @@ import { CardNumberInputsComponent } from './components/cards/card-number-inputs
 import { CardTextInputsComponent } from './components/cards/card-text-inputs/card-text-inputs.component';
 import { CardGenericInputsComponent } from './components/cards/card-generic-inputs/card-generic-inputs.component';
 import {ReactiveFormsModule} from '@angular/forms';
+import { RoutineComponent } from './views/admin/routine/routine.component';
+import { CardTwoColumnsComponent } from './components/cards/card-two-columns/card-two-columns.component';
 
 // Materials
 
@@ -88,6 +90,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     CardNumberInputsComponent,
     CardTextInputsComponent,
     CardGenericInputsComponent,
+    RoutineComponent,
+    CardTwoColumnsComponent,
   ],
     imports: [
         BrowserModule,
