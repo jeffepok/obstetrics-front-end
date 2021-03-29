@@ -1,7 +1,7 @@
 {
   "name": "obstetric-data-collection",
   "version": "1.1.0",
-  "description": "Notus Angular - Free Tailwind CSS UI Kit and Admin by Creative Tim.",
+  "description": "Obstetrics- A data collection tool to gather data of pregnancies",
   "repository": "https://github.com/jeffepok/obstetrics-front-end",
   "license": "MIT",
   "scripts": {
