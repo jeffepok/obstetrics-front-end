@@ -13,6 +13,16 @@
     <app-card-table [heading]="'Social History'" [data]="['alcohol', 'smoking']">
     </app-card-table>
     <app-card-inputs color="dark"></app-card-inputs>
+<!--    Previous Pregnancy History  -->
+    <app-card-generic-inputs
+      [selectInputs]="selectInputsPreviousPreg"
+      [textInputs]="textInputsPreviousPreg">
+
+    </app-card-generic-inputs>
+<!--    Current Pregnancy History -->
+    <app-card-generic-inputs color="dark" [textInputs]="textInputsCurrentPreg">
+
+    </app-card-generic-inputs>
   </div>
 
 </div>

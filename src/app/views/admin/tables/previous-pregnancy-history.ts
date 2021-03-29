@@ -1,22 +1,33 @@
-export const data = [
+export const textInputsPreviousPreg = [
   {
     heading: 'Date of Delivery Or Miscarriage',
-    type: 'text'
+    type: 'date',
+    name: 'dateOfDelivery'
   },
-  {
-    heading: 'Place of Birth (Hospital or Home)',
-    type: 'text'
-  },
+
   {
     heading: 'Problem Encountered By Mother',
-    type: 'text'
+    type: 'text',
+    name: 'problem'
   },
   {
-    heading: 'Date of Delivery Or Miscarriage',
-    type: 'text'
+    heading: 'Duration of Pregnancy(months)',
+    type: 'number',
+    name: 'duration'
+  },
+
+]
+export const selectInputsPreviousPreg = [
+  {
+    heading: 'Place of Birth (Hospital or Home)',
+    type: 'select',
+    name: 'placeOfBirth',
+    selectOptions: ['Hospital', 'Home']
   },
   {
-    heading: 'Date of Delivery Or Miscarriage',
-    type: 'text'
+    heading: 'Mode of Delivery',
+    type: 'text',
+    name: 'mode',
+    selectOptions: ['C-section', 'Normal']
   },
 ]

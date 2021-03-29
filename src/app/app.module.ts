@@ -40,7 +40,6 @@ import { FooterComponent } from './components/footers/footer/footer.component';
 import { FooterSmallComponent } from './components/footers/footer-small/footer-small.component';
 import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
-import { MapExampleComponent } from './components/maps/map-example/map-example.component';
 import { IndexDropdownComponent } from './components/dropdowns/index-dropdown/index-dropdown.component';
 import { TableDropdownComponent } from './components/dropdowns/table-dropdown/table-dropdown.component';
 import { PagesDropdownComponent } from './components/dropdowns/pages-dropdown/pages-dropdown.component';
@@ -50,6 +49,8 @@ import { UserDropdownComponent } from './components/dropdowns/user-dropdown/user
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardNumberInputsComponent } from './components/cards/card-number-inputs/card-number-inputs.component';
 import { CardTextInputsComponent } from './components/cards/card-text-inputs/card-text-inputs.component';
+import { CardGenericInputsComponent } from './components/cards/card-generic-inputs/card-generic-inputs.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 // Materials
 
@@ -75,7 +76,6 @@ import { CardTextInputsComponent } from './components/cards/card-text-inputs/car
     CardStatsComponent,
     CardTableComponent,
     HeaderStatsComponent,
-    MapExampleComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
@@ -91,13 +91,15 @@ import { CardTextInputsComponent } from './components/cards/card-text-inputs/car
     ProfileComponent,
     CardNumberInputsComponent,
     CardTextInputsComponent,
+    CardGenericInputsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
 
-  ],
+    ],
   providers: [
   ],
   bootstrap: [AppComponent],
