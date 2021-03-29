@@ -150,7 +150,7 @@ notus-angular
 │   │   │   │   │   └── card-profile.component.ts
 │   │   │   │   ├── card-settings
 │   │   │   │   │   ├── card-settings.component.html
-│   │   │   │   │   └── card-settings.component.ts
+│   │   │   │   │   └── card-biodata.component.ts
 │   │   │   │   ├── card-social-traffic
 │   │   │   │   │   ├── card-social-traffic.component.html
 │   │   │   │   │   └── card-social-traffic.component.ts
@@ -224,7 +224,7 @@ notus-angular
 │   │       │   │   └── maps.component.ts
 │   │       │   ├── settings
 │   │       │   │   ├── settings.component.html
-│   │       │   │   └── settings.component.ts
+│   │       │   │   └── biodata.component.ts
 │   │       │   └── tables
 │   │       │       ├── tables.component.html
 │   │       │       └── tables.component.ts

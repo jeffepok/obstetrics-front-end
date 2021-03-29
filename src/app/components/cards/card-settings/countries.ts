@@ -1,6 +1,5 @@
 export const countries = [
   {name: 'Afghanistan'},
-  {name: 'Afghanistan'},
   {name: 'Aland Islands'},
   {name: 'Albania'},
   {name: 'Algeria'},

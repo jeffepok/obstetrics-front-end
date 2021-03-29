@@ -4078,6 +4078,9 @@ select {
   .xl\:w-8\/12 {
     width: 66.666667%;
   }
+  .xl\:W-1 {
+    width: 100%;
+  }
 }
 
 @media (min-width: 1536px) {

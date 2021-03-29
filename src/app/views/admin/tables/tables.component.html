@@ -15,16 +15,20 @@
     <app-card-inputs color="dark"></app-card-inputs>
 <!--    Previous Pregnancy History  -->
     <app-card-generic-inputs
+      [heading] = "'Previous Pregnancy History'"
       [selectInputs]="selectInputsPreviousPreg"
       [textInputs]="textInputsPreviousPreg">
 
     </app-card-generic-inputs>
 <!--    Current Pregnancy History -->
-    <app-card-generic-inputs color="dark" [textInputs]="textInputsCurrentPreg">
+    <app-card-generic-inputs
+      [heading]="'Current Pregnancy History'"
+      color="dark" [textInputs]="textInputsCurrentPreg">
 
     </app-card-generic-inputs>
 
     <app-card-generic-inputs
+      [heading]="'Pregnancy Investigations'"
       [date]="true"
       [selectInputs]="selectInputsPregInvestigations">
 

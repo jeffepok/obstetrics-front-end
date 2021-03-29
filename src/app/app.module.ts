@@ -10,7 +10,7 @@ import { AuthComponent } from './layouts/auth/auth.component';
 
 // admin views
 import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
-import { SettingsComponent } from './views/admin/biodata/settings.component';
+import { BiodataComponent } from './views/admin/biodata/biodata.component';
 import { TablesComponent } from './views/admin/tables/tables.component';
 
 // auth views
@@ -18,7 +18,6 @@ import { LoginComponent } from './views/auth/login/login.component';
 import { RegisterComponent } from './views/auth/register/register.component';
 
 // no layouts views
-import { IndexComponent } from './views/index/index.component';
 import { LandingComponent } from './views/landing/landing.component';
 import { ProfileComponent } from './views/profile/profile.component';
 
@@ -80,11 +79,10 @@ import {ReactiveFormsModule} from '@angular/forms';
     IndexNavbarComponent,
     AdminComponent,
     AuthComponent,
-    SettingsComponent,
+    BiodataComponent,
     TablesComponent,
     LoginComponent,
     RegisterComponent,
-    IndexComponent,
     LandingComponent,
     ProfileComponent,
     CardNumberInputsComponent,
