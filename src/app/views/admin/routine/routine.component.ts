@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {selectInputsHIVHB} from './hiv-hb-routine';
+import {selectInputsHIV} from './hiv-hb-routine';
+import {selectInputsHB} from './hiv-hb-routine';
 import {subHeadings} from './antenatal-records';
 @Component({
   selector: 'app-routine',
@@ -7,7 +8,8 @@ import {subHeadings} from './antenatal-records';
   styleUrls: ['./routine.component.css']
 })
 export class RoutineComponent implements OnInit {
-  selectInputsHIVHB = selectInputsHIVHB;
+  selectInputsHIV = selectInputsHIV;
+  selectInputsHB = selectInputsHB;
   subHeadings = subHeadings;
   constructor() { }
 

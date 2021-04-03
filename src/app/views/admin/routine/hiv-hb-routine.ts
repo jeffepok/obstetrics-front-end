@@ -1,14 +1,16 @@
-export const selectInputsHIVHB = [
+export const selectInputsHIV = [
   {
     heading: 'HIV',
     type: 'select',
-    name: 'placeOfBirth',
+    name: 'hiv',
     selectOptions: ['Done', 'Not Done']
-  },
+  }
+]
+export const selectInputsHB = [
   {
     heading: 'Hepatitis-B',
     type: 'select',
-    name: 'mode',
+    name: 'hb',
     selectOptions: ['Done', 'Not Done']
-  },
+  }
 ]

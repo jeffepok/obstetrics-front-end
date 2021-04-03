@@ -1230,6 +1230,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: #F472B6;
 }
+.bg-pink-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255,192,203, var(--tw-bg-opacity));
+}
 
 .bg-purple-200 {
   --tw-bg-opacity: 1;
@@ -2477,7 +2481,9 @@ select {
 .min-w-140-px {
   min-width: 140px;
 }
-
+.min-w-36{
+  min-width: 8rem;
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -3141,10 +3147,26 @@ select {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+.text-pink-300{
+  --tw-text-opacity: 1;
+  color: rgba(249, 168, 212, var(--tw-text-opacity));
+}
 
 .text-pink-400 {
   --tw-text-opacity: 1;
   color: rgba(244, 114, 182, var(--tw-text-opacity));
+}
+.text-pink-500{
+  --tw-text-opacity: 1;
+  color: rgba(236, 72, 153, var(--tw-text-opacity));
+}
+.text-pink-600{
+  --tw-text-opacity: 1;
+  color: rgba(219, 39, 119, var(--tw-text-opacity));
+}
+.text-pink-700{
+  --tw-text-opacity: 1;
+  color: rgba(190, 24, 93, var(--tw-text-opacity));
 }
 
 .text-indigo-600 {
@@ -3255,6 +3277,10 @@ select {
 .hover\:text-red-700:hover {
   --tw-text-opacity: 1;
   color: rgba(185, 28, 28, var(--tw-text-opacity));
+}
+.hover\:text-pink-700:hover {
+  --tw-text-opacity: 1;
+  color: rgba(190, 24, 93, var(--tw-text-opacity));
 }
 
 .hover\:text-blueGray-300:hover {

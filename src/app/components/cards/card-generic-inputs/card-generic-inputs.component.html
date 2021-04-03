@@ -5,12 +5,12 @@
   <div class="rounded-t mb-0 px-4 py-3 border-0">
     <div class="rounded-t bg-white mb-0 px-6 py-6">
       <div class="text-center flex justify-between">
-        <h6
+        <h3
           class="text-blueGray-700 text-xl font-bold"
           [ngClass]="color === 'light' ? 'text-blueGray-700' : 'text-white'"
         >
           {{heading}}
-        </h6>
+        </h3>
         <button
           class="bg-red-400 text-white active:bg-red-700 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 ease-linear transition-all duration-150"
           type="button"
@@ -63,10 +63,10 @@
 
       <tr *ngFor="let history of textInputs">
         <td
-          class="px-6 align-middle border py-3 text-xs border-l-0 border-r-0 whitespace-nowrap font-semibold "
+          class="px-6 align-middle border py-3 text-xs border-none whitespace-nowrap font-semibold "
           [ngClass]="
               color === 'light'
-                ? 'bg-blueGray-50 text-blueGray-500 border-blueGray-100'
+                ? 'text-blueGray-500 border-blueGray-100'
                 : 'bg-red-800 text-red-300 border-red-700'
             "
         >
@@ -81,26 +81,28 @@
 
       </tr>
       <tr *ngFor="let history of selectInputs">
-        <th
-          class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center"
+        <td
+          class="px-6 align-middle border py-3 text-xs border-none whitespace-nowrap font-semibold"
+          [ngClass]="
+              color === 'light'
+                ? 'text-blueGray-500 border-blueGray-100'
+                : 'bg-red-800 text-red-300 border-red-700'
+            "
         >
-            <span
-              class="ml-3 font-bold"
-              [ngClass]="color === 'light' ? 'text-blueGray-600' : 'text-white'"
-            >
               {{history.heading}}
-            </span>
-        </th>
+        </td>
         <td
           class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
         >
           <select
             id="{{history.name}}"
-            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+            class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring min-w-36 w-full ease-linear transition-all duration-150"
             name="educationalLevel"
             value="Primary School"
           >
-            <option *ngFor="let option of history.selectOptions" [value]="option">
+            <option
+              class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring  w-full ease-linear transition-all duration-150"
+              *ngFor="let option of history.selectOptions" [value]="option">
               {{option}}
             </option>
           </select>
