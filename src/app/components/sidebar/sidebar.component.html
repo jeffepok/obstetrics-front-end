@@ -82,7 +82,7 @@
       <ul class="md:flex-col md:min-w-full flex flex-col list-none">
         <li class="items-center">
           <a
-            [routerLink]="['/admin/biodata']"
+            [routerLink]="['/profile/biodata']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
             #biodata="routerLinkActive"
@@ -104,7 +104,7 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/tables']"
+            [routerLink]="['/profile/tables']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
             #adminTables="routerLinkActive"
@@ -126,7 +126,7 @@
 
         <li class="items-center">
           <a
-            [routerLink]="['/admin/routine']"
+            [routerLink]="['/profile/routine']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
             #adminRoutine="routerLinkActive"
@@ -139,7 +139,7 @@
             <i
               class="fas fa-recycle mr-2 text-sm"
               [ngClass]="
-                adminTables.isActive ? 'opacity-75' : 'text-blueGray-300'
+                adminRoutine.isActive ? 'opacity-75' : 'text-blueGray-300'
               "
             ></i>
             Routine Records
