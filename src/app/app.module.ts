@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -44,6 +45,7 @@ import { CardGenericInputsComponent } from './components/cards/card-generic-inpu
 import {ReactiveFormsModule} from '@angular/forms';
 import { RoutineComponent } from './views/admin/routine/routine.component';
 import { CardTwoColumnsComponent } from './components/cards/card-two-columns/card-two-columns.component';
+import {AuthService} from './views/auth/auth.service';
 
 // Materials
 
@@ -81,12 +83,15 @@ import { CardTwoColumnsComponent } from './components/cards/card-two-columns/car
   ],
     imports: [
         BrowserModule,
+        FormsModule,
+        HttpClientModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         ReactiveFormsModule,
 
     ],
   providers: [
+    AuthService
   ],
   bootstrap: [AppComponent],
 })
