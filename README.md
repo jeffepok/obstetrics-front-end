@@ -182,7 +182,7 @@ notus-angular
 │   │   │   │   │   └── footer.component.ts
 │   │   │   │   ├── footer-admin
 │   │   │   │   │   ├── footer-admin.component.html
-│   │   │   │   │   └── footer-admin.component.ts
+│   │   │   │   │   └── footer-home.component.ts
 │   │   │   │   └── footer-small
 │   │   │   │       ├── footer-small.component.html
 │   │   │   │       └── footer-small.component.ts
@@ -210,7 +210,7 @@ notus-angular
 │   │   ├── layouts
 │   │   │   ├── admin
 │   │   │   │   ├── admin.component.html
-│   │   │   │   └── admin.component.ts
+│   │   │   │   └── home.component.ts
 │   │   │   └── auth
 │   │   │       ├── auth.component.html
 │   │   │       └── auth.component.ts

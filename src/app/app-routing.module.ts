@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 // layouts
-import { AdminComponent } from './layouts/admin/admin.component';
+import { HomeComponent } from './layouts/home/home.component';
 import { AuthComponent } from './layouts/auth/auth.component';
 
 // admin views
-import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
 import { BiodataComponent } from './views/admin/biodata/biodata.component';
 import { TablesComponent } from './views/admin/tables/tables.component';
 import {RoutineComponent} from './views/admin/routine/routine.component';
@@ -22,16 +21,15 @@ import { ProfileComponent } from './views/profile/profile.component';
 
 
 const routes: Routes = [
-  // admin views
+  // profile views
   {
-    path: 'admin',
-    component: AdminComponent,
+    path: 'profile',
+    component: HomeComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent },
       { path: 'biodata', component: BiodataComponent },
       { path: 'tables', component: TablesComponent },
       { path: 'routine', component: RoutineComponent},
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '', redirectTo: 'biodata', pathMatch: 'full' },
     ],
   },
   // auth views

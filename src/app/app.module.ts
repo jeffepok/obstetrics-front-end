@@ -5,11 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // layouts
-import { AdminComponent } from './layouts/admin/admin.component';
+import { HomeComponent } from './layouts/home/home.component';
 import { AuthComponent } from './layouts/auth/auth.component';
 
 // admin views
-import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
 import { BiodataComponent } from './views/admin/biodata/biodata.component';
 import { TablesComponent } from './views/admin/tables/tables.component';
 
@@ -25,18 +24,12 @@ import { ProfileComponent } from './views/profile/profile.component';
 
 import { AdminNavbarComponent } from './components/navbars/admin-navbar/admin-navbar.component';
 import { AuthNavbarComponent } from './components/navbars/auth-navbar/auth-navbar.component';
-import { CardBarChartComponent } from './components/cards/card-bar-chart/card-bar-chart.component';
-import { CardLineChartComponent } from './components/cards/card-line-chart/card-line-chart.component';
-import { CardPageVisitsComponent } from './components/cards/card-page-visits/card-page-visits.component';
 import { CardProfileComponent } from './components/cards/card-profile/card-profile.component';
 import { CardSettingsComponent } from './components/cards/card-settings/card-settings.component';
-import { CardSocialTrafficComponent } from './components/cards/card-social-traffic/card-social-traffic.component';
-import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
 import { CardTableComponent } from './components/cards/card-table/card-table.component';
 import { FooterAdminComponent } from './components/footers/footer-admin/footer-admin.component';
 import { FooterComponent } from './components/footers/footer/footer.component';
 import { FooterSmallComponent } from './components/footers/footer-small/footer-small.component';
-import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
 import { IndexDropdownComponent } from './components/dropdowns/index-dropdown/index-dropdown.component';
 import { TableDropdownComponent } from './components/dropdowns/table-dropdown/table-dropdown.component';
@@ -57,9 +50,6 @@ import { CardTwoColumnsComponent } from './components/cards/card-two-columns/car
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent,
-    CardBarChartComponent,
-    CardLineChartComponent,
     IndexDropdownComponent,
     PagesDropdownComponent,
     TableDropdownComponent,
@@ -69,17 +59,13 @@ import { CardTwoColumnsComponent } from './components/cards/card-two-columns/car
     FooterComponent,
     FooterSmallComponent,
     FooterAdminComponent,
-    CardPageVisitsComponent,
     CardProfileComponent,
     CardSettingsComponent,
-    CardSocialTrafficComponent,
-    CardStatsComponent,
     CardTableComponent,
-    HeaderStatsComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
-    AdminComponent,
+    HomeComponent,
     AuthComponent,
     BiodataComponent,
     TablesComponent,
