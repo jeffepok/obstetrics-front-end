@@ -7,8 +7,8 @@ import {ILoginUserData} from './login/ILoginUserData';
   providedIn: 'root'
 })
 export class AuthService {
-  private _registerUrl = 'http://localhost:3000/api/user/register';
-  private _loginUrl = 'http://localhost:3000/api/user/login';
+  private _registerUrl = '/api/user/register';
+  private _loginUrl = '/api/user/login';
   constructor(private http: HttpClient) { }
 
   registerUser(user:IRegisterUserData){

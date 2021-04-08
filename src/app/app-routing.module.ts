@@ -17,7 +17,6 @@ import { RegisterComponent } from './views/auth/register/register.component';
 // no layouts views
 
 import { LandingComponent } from './views/landing/landing.component';
-import { ProfileComponent } from './views/profile/profile.component';
 
 
 const routes: Routes = [
@@ -43,7 +42,7 @@ const routes: Routes = [
     ],
   },
   // no layout views
-  { path: 'profile', component: ProfileComponent },
+
 
   {
     path: 'landing',
@@ -59,7 +58,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabled'
+})],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

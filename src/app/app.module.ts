@@ -82,7 +82,7 @@ import {AuthService} from './views/auth/auth.service';
     CardTwoColumnsComponent,
   ],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
         FormsModule,
         HttpClientModule,
         AppRoutingModule,
