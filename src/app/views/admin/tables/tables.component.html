@@ -1,0 +1,43 @@
+<div class="flex flex-wrap mt-4">
+  <div class="w-full mb-12 px-4">
+    <app-card-table color = "light" [heading]="'Maternal Medical History'"
+                    [data]="['hypertension', 'heart disease', 'sickle cell disease', 'allergies']">
+    </app-card-table>
+  </div>
+
+  <div class="w-full mb-12 px-4">
+    <app-card-table [heading]="'Family History'"
+                    [data]="['hypertension', 'heart disease', 'diabetes', 'multiple pregnancy', 'birth defects', 'mental disorder']"
+                    color="light">
+    </app-card-table>
+    <app-card-table color = "light" [heading]="'Social History'" [data]="['alcohol', 'smoking']">
+    </app-card-table>
+    <app-card-number-inputs color="light"></app-card-number-inputs>
+<!--    Previous Pregnancy History  -->
+    <app-card-generic-inputs
+      color = "light"
+      [heading] = "'Pregnancy History'"
+      [selectInputs]="selectInputsPreviousPreg"
+      [textInputs]="textInputsPreviousPreg">
+
+    </app-card-generic-inputs>
+<!--    Current Pregnancy History -->
+    <app-card-generic-inputs
+      color = "light"
+      [heading]="'Current Pregnancy'"
+      [textInputs]="textInputsCurrentPreg">
+
+    </app-card-generic-inputs>
+
+    <app-card-generic-inputs
+      color = "light"
+      [heading]="'Pregnancy Investigations'"
+      [date]="true"
+      [selectInputs]="selectInputsPregInvestigations">
+
+    </app-card-generic-inputs>
+
+
+  </div>
+
+</div>
