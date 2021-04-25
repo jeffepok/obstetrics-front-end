@@ -7,11 +7,13 @@ import * as express from 'express';
 import { join } from 'path';
 import { Request, Response} from 'express';
 import * as mongoose from 'mongoose';
-
+import 'localstorage-polyfill'
 import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
-const pregnantWomanRoute:PregnantWomanRoute = new PregnantWomanRoute();
+
+global['localStorage'] = localStorage;
+const pregnantWomanRoute: PregnantWomanRoute = new PregnantWomanRoute();
 const authRoute: AuthRoute = new AuthRoute();
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -22,7 +24,7 @@ export function app(): express.Express {
 
   const server = express();
   server.use(express.json());
-  server.use(express.urlencoded({ extended: false }))
+  server.use(express.urlencoded({ extended: false }));
   const distFolder = join(process.cwd(), 'dist/obstetrics/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
@@ -50,11 +52,6 @@ export function app(): express.Express {
   server.get('*', (req, res) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
-  server.post('/example',(req:Request, res:Response)=>{
-    console.log(req.body)
-    res.status(200).send('post received')
-  })
-
   return server;
 }
 

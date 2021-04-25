@@ -17,6 +17,7 @@ import { RegisterComponent } from './views/auth/register/register.component';
 // no layouts views
 
 import { LandingComponent } from './views/landing/landing.component';
+import {AuthGuard} from './auth.guard';
 
 
 const routes: Routes = [
@@ -24,11 +25,12 @@ const routes: Routes = [
   {
     path: 'profile',
     component: HomeComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: 'biodata', component: BiodataComponent },
       { path: 'tables', component: TablesComponent },
       { path: 'routine', component: RoutineComponent},
-      { path: '', redirectTo: 'biodata', pathMatch: 'full' },
+      { path: '', redirectTo: 'biodata', pathMatch: 'full' }
     ],
   },
   // auth views
@@ -47,14 +49,14 @@ const routes: Routes = [
   {
     path: 'landing',
     component: LandingComponent,
-    children:[
+    children: [
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ]
   },
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', redirectTo: 'landing', pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -1,22 +1,22 @@
-//VALIDATION
+// VALIDATION
 import * as Joi from 'joi';
 
-//Register validation
+// Register validation
 
-export const registeredValidation = (data:any) =>{
+export const registeredValidation = (data: any) => {
     const schema = Joi.object({
         email: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
         password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$'))
     });
-    return schema.validate(data)
-}
-export const loginValidation = (data: any) =>{
+    return schema.validate(data);
+};
+export const loginValidation = (data: any) => {
     const schema = Joi.object({
         email: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
         password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$'))
     });
 
-    return schema.validate(data)
-}
+    return schema.validate(data);
+};
 
 

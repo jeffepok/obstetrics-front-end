@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 // layouts
 import { HomeComponent } from './layouts/home/home.component';
 import { AuthComponent } from './layouts/auth/auth.component';
@@ -41,7 +41,9 @@ import { CardGenericInputsComponent } from './components/cards/card-generic-inpu
 import {ReactiveFormsModule} from '@angular/forms';
 import { RoutineComponent } from './views/admin/routine/routine.component';
 import { CardTwoColumnsComponent } from './components/cards/card-two-columns/card-two-columns.component';
-import {AuthService} from './views/auth/auth.service';
+import {AuthenticationService} from './views/auth/auth.service';
+import {AuthGuard} from './auth.guard';
+import {TokenInterceptorService} from './token-interceptor.service';
 
 // Materials
 
@@ -82,8 +84,16 @@ import {AuthService} from './views/auth/auth.service';
 
     ],
   providers: [
-    AuthService
+    AuthenticationService,
+    AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    },
+    CookieService
   ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
